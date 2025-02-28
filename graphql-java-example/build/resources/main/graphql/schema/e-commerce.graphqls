@@ -1,0 +1,22 @@
+type Query {
+    user(id: ID!): User
+    products: [Product!]
+}
+
+type User {
+    id: ID!
+    name: String!
+    email: String!
+    cart: [CartItem!]
+}
+
+type CartItem {
+    product: Product!
+    quantity: Int!
+}
+
+type Product {
+    id: ID!
+    name: String!
+    price: Float!
+}

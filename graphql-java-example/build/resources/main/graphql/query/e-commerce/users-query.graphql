@@ -1,0 +1,15 @@
+{
+    user(id: 1) {
+        id
+        name
+        email
+        cart {
+            product {
+                id
+                name
+                price
+            }
+            quantity
+        }
+    }
+}
