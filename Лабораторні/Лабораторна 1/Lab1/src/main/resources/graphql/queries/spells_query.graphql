@@ -1,0 +1,7 @@
+{
+    spells {
+        id
+        name
+        description
+    }
+}

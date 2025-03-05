@@ -1,0 +1,7 @@
+{
+    spell(name: "Aguamenti") {
+        id
+        name
+        description
+    }
+}

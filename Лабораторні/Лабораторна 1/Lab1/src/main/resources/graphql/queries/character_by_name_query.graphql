@@ -1,0 +1,28 @@
+{
+    character(name: "Sirius Black") {
+        id
+        name
+        alternateNames
+        species
+        gender
+        house
+        dateOfBirth
+        yearOfBirth
+        wizard
+        ancestry
+        eyeColour
+        hairColour
+        patronus
+        hogwartsStudent
+        hogwartsStaff
+        actor
+        alternate_actors
+        alive
+        image
+        wand {
+            wood
+            core
+            length
+        }
+    }
+}

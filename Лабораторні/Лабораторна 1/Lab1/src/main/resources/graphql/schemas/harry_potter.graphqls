@@ -1,0 +1,40 @@
+type Query {
+    spells: [Spell!]
+    spell(name: String!): Spell
+    character(name: String!): Character
+}
+
+type Wand {
+    wood: String!,
+    core: String!,
+    length: Float!
+}
+
+type Spell {
+    id: String!,
+    name: String!,
+    description: String!
+}
+
+type Character {
+    id: String!,
+    name: String!,
+    alternateNames: [String],
+    species: String!,
+    gender: String!,
+    house: String!,
+    dateOfBirth: String,
+    yearOfBirth: String,
+    wizard: Boolean!,
+    ancestry: String!,
+    eyeColour: String,
+    hairColour: String!,
+    wand: Wand!,
+    patronus: String!,
+    hogwartsStudent: Boolean!,
+    hogwartsStaff: Boolean!,
+    actor: String!,
+    alternate_actors: [String],
+    alive: Boolean!,
+    image: String!
+}
