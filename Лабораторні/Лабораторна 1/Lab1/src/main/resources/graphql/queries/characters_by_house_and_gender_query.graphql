@@ -1,5 +1,5 @@
 {
-    character(name: "Sirius Black") {
+    charactersByHouseAndGender(house: "Gryffindor", gender: "male") {
         id
         name
         alternateNames

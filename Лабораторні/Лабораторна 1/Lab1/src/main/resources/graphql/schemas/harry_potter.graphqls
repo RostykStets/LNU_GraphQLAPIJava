@@ -2,12 +2,23 @@ type Query {
     spells: [Spell!]
     spell(name: String!): Spell
     character(name: String!): Character
+    charactersByHouseAndGender(house: String!, gender: String!): [Character]
+}
+
+type Mutation {
+    addSpell(newSpell: SpellInput): Spell
+}
+
+input SpellInput{
+    id: String!
+    name: String!
+    description: String!
 }
 
 type Wand {
     wood: String!,
     core: String!,
-    length: Float!
+    length: Float
 }
 
 type Spell {
@@ -19,7 +30,7 @@ type Spell {
 type Character {
     id: String!,
     name: String!,
-    alternateNames: [String],
+    alternateNames: [String!],
     species: String!,
     gender: String!,
     house: String!,
@@ -34,7 +45,7 @@ type Character {
     hogwartsStudent: Boolean!,
     hogwartsStaff: Boolean!,
     actor: String!,
-    alternate_actors: [String],
+    alternateActors: [String!],
     alive: Boolean!,
     image: String!
 }

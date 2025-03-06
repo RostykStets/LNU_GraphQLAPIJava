@@ -1,0 +1,11 @@
+mutation {
+    addSpell(newSpell: {
+        id: "123e4567-new_id-12d3-a456-426614174000",
+        name: "Code generatio",
+        description: "Generates code for the task"
+    }) {
+        id
+        name
+        description
+    }
+}
